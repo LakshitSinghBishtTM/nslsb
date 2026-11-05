@@ -48,16 +48,6 @@ Common alternative spellings (`"newtonraphson"`, `"rungekutta"`, `"simpsons"`, `
 are accepted as well, and so are `"Gauss"` or `"Runge-Kutta"` (case, spaces and
 punctuation are ignored).
 
-## Fixes made to the original lab code
-
-- **Gauss elimination:** no longer modifies the caller's matrix/RHS (calling it twice used
-  to give wrong answers); raises a clear error for singular matrices.
-- **Power method:** converges for matrices whose dominant eigenvalue is negative (the old
-  vector check never passed because the sign flips each step); seeded start vector for
-  reproducible output; guards against a zero vector.
-- **Least squares:** raises an error instead of dividing by zero when all x are equal.
-- **Floating point:** added the numerically stable form of `sqrt(x^2+1) - x`.
-
 ## Development
 
 ```bash

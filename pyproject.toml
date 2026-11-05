@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/lakshitsinghbisht/nalsb"
+Homepage = "https://github.com/lakshitsinghbishttm/nalsb"
 
 [tool.setuptools.packages.find]
 where = ["src"]
