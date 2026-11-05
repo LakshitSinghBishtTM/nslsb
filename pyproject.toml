@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nalsb"
+version = "0.1.0"
+description = "Numerical Methods for Scientific Computing lab programs as a library: na.ques(1), na.ans('gauss')"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Lakshit Singh Bisht", email = "lakshitsinghbishttm@gmail.com" }]
+keywords = ["numerical methods", "lab manual", "gauss", "jacobi", "newton-raphson", "simpson", "runge-kutta"]
+dependencies = ["numpy", "scipy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://github.com/lakshitsinghbisht/nalsb"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+nalsb = ["programs/*.py"]
